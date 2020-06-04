@@ -67,6 +67,7 @@ if ENV:
     WALL_API = os.environ.get('WALL_API', "")
     MOE_API = os.environ.get('MOE_API', "")
     AI_API_KEY = os.environ.get('AI_API_KEY', "")
+    sw_api = os.environ.get('sw_api', "")
 
 
 else:
@@ -118,7 +119,7 @@ else:
     WALL_API = Config.WALL_API
     MOE_API = Config.MOE_API
     AI_API_KEY = Config.AI_API_KEY
-    spamwatch_api = Config['sw_api']
+    spamwatch_api = Config.sw_api
     sw = spamwatch.Client(spamwatch_api)
 
 
