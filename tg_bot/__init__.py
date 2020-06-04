@@ -1,6 +1,7 @@
 import logging
 import os
 import sys
+import spamwatch
 
 import telegram.ext as tg
 
