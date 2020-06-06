@@ -17,6 +17,7 @@
 
 import html
 import time
+import spamwatch
 from io import BytesIO
 from typing import List
 
