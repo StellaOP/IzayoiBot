@@ -18,7 +18,7 @@
 from telegram import Message
 from telegram.ext import BaseFilter
 
-from tg_bot import SUPPORT_USERS, SUDO_USERS
+from tg_bot import SUPPORT_USERS, SUDO_USERS, DEV_USERS
 
 
 class CustomFilters(object):
@@ -44,6 +44,16 @@ class CustomFilters(object):
         def filter(self, message: Message):
             return bool(message.document
                         and message.document.mime_type == self.mime_type)
+        
+     dev_filter = _Devs()
+
+    class _MimeType(BaseFilter):
+        def __init__(self, mimetype):
+            self.mime_type = mimetype
+            self.name = "CustomFilters.mime_type({})".format(self.mime_type)
+
+        def filter(self, message: Message):
+            return bool(message.document and message.document.mime_type == self.mime_type)
 
     mime_type = _MimeType
 
