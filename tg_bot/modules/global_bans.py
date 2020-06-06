@@ -19,20 +19,19 @@ import html
 import time
 import spamwatch
 from io import BytesIO
-from typing import Optional, List
+from typing import List
 
-from telegram import Message, Update, Bot, User, Chat, ParseMode
-from telegram.error import BadRequest, TelegramError
+from telegram import Update, Bot, ParseMode
+from telegram.error import BadRequest  #,  TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import tg_bot.modules.sql.global_bans_sql as sql
-from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, MESSAGE_DUMP, STRICT_GBAN, spamwtc
+import tg_bot.modules.global_bans_sql.py as sql
+from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, MESSAGE_DUMP, STRICT_ANTISPAM, sw
 from tg_bot.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from tg_bot.modules.helper_funcs.filters import CustomFilters
-from tg_bot.modules.helper_funcs.misc import send_to_list
-from tg_bot.modules.sql.users_sql import get_all_chats
+from tg_bot.modules.helper_funcs.extraction import extract_user_and_text
+from tg_bot.modules.helper_funcs.filters import CustomFilter
+
 #from tg_bot.modules.helper_funcs.misc import send_to_list
 # from tg_bot.modules.sql.users_sql import get_all_chats
 
