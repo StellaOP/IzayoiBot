@@ -45,7 +45,7 @@ class CustomFilters(object):
             return bool(message.document
                         and message.document.mime_type == self.mime_type)
         
-     dev_filter = _Devs()
+    dev_filter = _Devs()
 
     class _MimeType(BaseFilter):
         def __init__(self, mimetype):
