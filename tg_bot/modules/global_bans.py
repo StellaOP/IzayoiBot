@@ -26,7 +26,7 @@ from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
 import tg_bot.modules.sql.antispam_sql as sql
-from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, GBAN_DUMP, STRICT_ANTISPAM, spamwtc
+from tg_bot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, MESSAGE_DUMP, STRICT_ANTISPAM, spamwtc
 from tg_bot.modules.helper_funcs.chat_status import user_admin, is_user_admin
 from tg_bot.modules.helper_funcs.extraction import extract_user_and_text
 from tg_bot.modules.helper_funcs.filters import CustomFilters
@@ -110,7 +110,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
 
         try:
             bot.send_message(
-                GBAN_DUMP,
+                MESSAGE_DUMP,
                 tld(chat.id, "antispam_logger_update_gban").format(
                     mention_html(banner.id, banner.first_name),
                     mention_html(user_chat.id, user_chat.first_name
@@ -132,7 +132,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     message.reply_text(starting, parse_mode=ParseMode.HTML)
 
     try:
-        bot.send_message(GBAN_DUMP,
+        bot.send_message(MESSAGE_DUMP,
                          tld(chat.id, "antispam_logger_new_gban").format(
                              mention_html(banner.id, banner.first_name),
                              mention_html(user_chat.id, user_chat.first_name),
