@@ -19,12 +19,12 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Hi {}, My Name is {}!
 I'm a group management bot and My Owner is Shicmuon ◉‿◉
 
-The support chat is at Izayoi_OPGroup
+The support chat is at @Izayoi_OPGroup
 
-Owner of IzayoiOP_Bot: [らнɪㄈ௱ЦØЛ](https://t.me/ShicmuonOP)
+Owner of IzayoiOPBot: [らнɪㄈ௱ЦØЛ](https://t.me/ShicmuonOP)
 
 
 
@@ -32,7 +32,7 @@ You can find the list of available commands with /help
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey there! My Name is *{}*.
 I'm a group management bot and My Owner is Shicmuon ◉‿◉
 
 *Main* commands available:
