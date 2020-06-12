@@ -20,12 +20,12 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
-I'm a group management bot with a few fun extras ;)
+I'm a group management bot and My Owner is Shicmuon ◉‿◉
 
-The support chat is at @tohsakas
+The support chat is at Izayoi_OPGroup
 
-Source code repository: [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot)
-My repository: [TheRealTohsakaBot](https://github.com/Dank-del/TheRealTohskaBot)
+Source code repository: [IzayoiOP_Bot](It doesn't matter)
+My repository: [IzayoiOP_Bot](It doesn't matter)
 
 
 You can find the list of available commands with /help
@@ -33,7 +33,7 @@ You can find the list of available commands with /help
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras!
+I'm a group management bot and My Owner is Shicmuon ◉‿◉
 
 *Main* commands available:
  - /start: start the bot
