@@ -24,8 +24,8 @@ I'm a group management bot and My Owner is Shicmuon ◉‿◉
 
 The support chat is at Izayoi_OPGroup
 
-Source code repository: [IzayoiOP_Bot](It doesn't matter)
-My repository: [IzayoiOP_Bot](It doesn't matter)
+Owner of IzayoiOP_Bot: [らнɪㄈ௱ЦØЛ](https://t.me/ShicmuonOP)
+
 
 
 You can find the list of available commands with /help
