@@ -47,7 +47,7 @@ I'm a group management bot and My Owner is Shicmuon ◉‿◉
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-RIN_MG = "https://telegra.ph/file/ab524ed9bf5977a642b9c.jpg"
+IZAYOI_IMG = "https://telegra.ph/file/ab524ed9bf5977a642b9c.jpg"
 
 DONATE_STRING = """{0} doesn't currently need any donations.
 However you can donate to the creator of the original source code which {0} \
