@@ -22,7 +22,7 @@ PM_START_TEXT = """
 Hi {}, My Name is {}!
 I'm a group management bot and My Owner is Shicmuon ◉‿◉
 
-The support chat is at [Izayoi_OPGroup](@Izayoi_OPGroup)
+The support chat is at [@Izayoi_OPGroup]
 
 Owner of IzayoiOP_Bot[らнɪㄈ௱ЦØЛ](https://t.me/ShicmuonOP)
 
